@@ -3,7 +3,7 @@ async function loadGallery() {
     if (!gallery) return;
 
     try {
-        const response = await fetch('manifest.json', { cache: 'no-cache' });
+        const response = await fetch('images.json', { cache: 'no-cache' });
         if (!response.ok) {
             gallery.innerHTML = "<p>Bilder kommer snart.</p>";
             return;
@@ -32,7 +32,7 @@ async function loadGallery() {
             gallery.appendChild(div);
         });
     } catch (e) {
-        console.error('Kunde inte läsa manifest.json:', e);
+        console.error('Kunde inte läsa images.json:', e);
         gallery.innerHTML = "<p>Fel vid laddning av galleri.</p>";
     }
 }
