@@ -1,1 +1,1 @@
-# jgblastring
+# JG Blästring
