@@ -179,10 +179,6 @@ body {
     .hero h1 {
         font-size: 2.3rem;
     }
-
-    .nav-links {
-        display: none; /* keep it super simple for now */
-    }
 }
 
 /* Lightbox for gallery images */
