@@ -85,6 +85,28 @@ body {
     color: var(--primary);
 }
 
+/* Hamburger button (hidden on desktop) */
+.nav-toggle {
+    display: none; /* default: hidden, shown on small screens */
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.nav-toggle span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #1a1a1a;
+    border-radius: 2px;
+}
+
 /* Hero */
 .hero {
     height: 80vh;
