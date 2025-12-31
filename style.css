@@ -201,6 +201,36 @@ body {
     .hero h1 {
         font-size: 2.3rem;
     }
+
+    /* Show hamburger, hide normal horizontal menu */
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: var(--nav-height);
+        right: 0;
+        left: 0;
+        margin: 0;
+        padding: 10px 20px 15px;
+        background: #fac400; /* same as navbar bg */
+        list-style: none;
+        flex-direction: column;
+        gap: 8px;
+        display: none; /* hidden until toggled */
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    .nav-links li a {
+        display: block;
+        padding: 6px 0;
+    }
+
+    /* When menu is open, show it */
+    .nav-links.nav-open {
+        display: flex;
+    }
 }
 
 /* Lightbox for gallery images */
